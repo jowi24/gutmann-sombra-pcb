@@ -4,7 +4,7 @@
 
 Diese Doku beschreibt die Schematic in `hood-control.kicad_pro` /
 `hood-control.kicad_sch`. Alle Werte sind aus der Fehlersuche an der
-Lochraster-Version abgeleitet (siehe [CHANGELOG.de.md](../CHANGELOG.de.md) / Debugging-Session
+Lochraster-Version abgeleitet (siehe [Firmware-Changelog](https://github.com/jowi24/gutmann-sombra-mqtt/blob/master/CHANGELOG.de.md) / Debugging-Session
 vom 2026-09-03) sowie aus dem Blogartikel von 2017
 ("Do-It-Yourself IoT Modul für die Dunstabzugshaube").
 
@@ -214,7 +214,7 @@ Nicht mitbestellt, weil **vorhanden**: Stiftleiste 2,54 mm (für J2, J4, J5),
 Kurzschlussbrücke für J5 und die vier M2-Schrauben. Die Bestellung ist damit
 vollständig – es fehlt nichts mehr.
 
-## GPIO-Zuordnung (aus src/main.cpp)
+## GPIO-Zuordnung (von beiden Firmwares verwendet)
 
 | GPIO | Funktion | Über welchen Levelshifter |
 |---|---|---|

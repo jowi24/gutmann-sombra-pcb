@@ -382,8 +382,8 @@ once it runs, the 5 V pulses feed back into its supply through them.
 ## 9. Firmware in step with the hood
 
 The electronics alone are not enough – the ESP has to look and press at the
-right moment. This is how the firmware ([`src/main.cpp`](../src/main.cpp))
-does it:
+right moment. This is how both firmwares do it (the [ESPHome component](https://github.com/jowi24/gutmann-sombra-esphome/blob/main/components/sombra_hood/sombra_hood.cpp)
+and the older [Arduino firmware](https://github.com/jowi24/gutmann-sombra-mqtt/blob/master/src/main.cpp)):
 
 ### Synchronising
 
@@ -475,7 +475,7 @@ DTR – RXI – TXO – 3V3 – NC – GND.
 - GPIO0 is **not** switched automatically: for serial flashing set J5 to
   FLASH, then back to RUN and press reset.
 - Day to day, flashing is done **over Wi-Fi (OTA)** anyway, see
-  [`OPERATIONS.md`](OPERATIONS.md).
+  the [ESPHome firmware](https://github.com/jowi24/gutmann-sombra-esphome).
 
 **Important:** through the 3V3 pin of J2 the adapter powers the ESP directly
 with 3.3 V. A test on the adapter alone therefore says **nothing** about the

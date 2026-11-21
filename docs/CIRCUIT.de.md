@@ -387,7 +387,8 @@ ziehen sie die Spalte nach unten; wenn er läuft, speisen die 5-V-Impulse
 ## 9. Die Firmware im Takt der Haube
 
 Die Elektronik allein reicht nicht – der ESP muss im richtigen Moment
-hinsehen und drücken. So macht es die Firmware ([`src/main.cpp`](../src/main.cpp)):
+hinsehen und drücken. So machen es beide Firmwares (die [ESPHome-Komponente](https://github.com/jowi24/gutmann-sombra-esphome/blob/main/components/sombra_hood/sombra_hood.cpp)
+und die ältere [Arduino-Firmware](https://github.com/jowi24/gutmann-sombra-mqtt/blob/master/src/main.cpp)):
 
 ### Synchronisieren
 
@@ -479,7 +480,7 @@ DTR – RXI – TXO – 3V3 – NC – GND.
 - GPIO0 wird **nicht** automatisch umgeschaltet: Zum seriellen Flashen J5
   auf FLASH stecken, danach zurück auf RUN und Reset drücken.
 - Im Alltag wird ohnehin **per WLAN (OTA)** geflasht, siehe
-  [`OPERATIONS.de.md`](OPERATIONS.de.md).
+  die [ESPHome-Firmware](https://github.com/jowi24/gutmann-sombra-esphome/blob/main/README.de.md).
 
 **Wichtig:** Über den 3V3-Pin von J2 versorgt der Adapter den ESP direkt mit
 3,3 V. Ein Test nur am Adapter sagt deshalb **nichts** über die eigentliche

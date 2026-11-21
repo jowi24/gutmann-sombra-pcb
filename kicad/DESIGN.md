@@ -4,7 +4,7 @@
 
 This document describes the schematic in `hood-control.kicad_pro` /
 `hood-control.kicad_sch`. All values are derived from debugging the
-perfboard version (see [CHANGELOG.md](../CHANGELOG.md) / debugging session
+perfboard version (see the [firmware changelog](https://github.com/jowi24/gutmann-sombra-mqtt/blob/master/CHANGELOG.md) / debugging session
 of 2026-09-03) and from the 2017 blog post
 ("Do-It-Yourself IoT Modul für die Dunstabzugshaube").
 
@@ -215,7 +215,7 @@ Not ordered because **on hand**: 2.54 mm pin header (for J2, J4, J5),
 jumper for J5 and the four M2 screws. The order is thus complete – nothing
 is missing.
 
-## GPIO assignment (from src/main.cpp)
+## GPIO assignment (as used by both firmwares)
 
 | GPIO | Function | Via which level shifter |
 |---|---|---|
